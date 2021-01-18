@@ -65,3 +65,8 @@ ON e.emp_no = s.emp_no
 JOIN titles t
 ON t.title_id = e.emp_title_id
 GROUP BY t.title;
+
+SELECT first_name, last_name
+FROM employees
+WHERE emp_no = 499942;
+
