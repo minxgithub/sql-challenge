@@ -9,6 +9,11 @@ SELECT first_name, last_name, hire_date
 FROM employees
 WHERE hire_date >= '1986-01-01' AND hire_date <= '1986-12-31'
 ORDER BY hire_date;
+--alternative way
+SELECT first_name, last_name, hire_date
+FROM employees
+WHERE hire_date between '1986-01-01' AND '1986-12-31'
+ORDER BY hire_date;
 
 --3.List the manager of each department with the following information: 
 ----department number, department name, the manager's employee number, last name, first name.
